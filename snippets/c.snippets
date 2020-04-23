@@ -41,13 +41,13 @@ snippet #if
 	#endif
 # header include guard
 snippet once
-	#ifndef ${1:`toupper(vim_snippets#Filename('$1_H', 'UNTITLED_H'))`}
+	#ifndef ${1:`toupper(vim_snippets#Filename('__$1_H__', 'UNTITLED_H'))`}
 
 	#define $1
 
 	${0}
 
-	#endif /* end of include guard: $1 */
+	#endif /* end of include guard: __$1__ */
 # Disable C++ name mangling in C headers
 snippet nocxx
 	#ifdef __cplusplus
@@ -234,7 +234,8 @@ snippet st
 	 *
 	 *  ${4:Detailed description}
 	 */
-	struct ${1:`vim_snippets#Filename('$1_t', 'name')`} {
+	struct ${1:`vim_snippets#Filename('$1_t', 'name')`}
+	{
 		${2:Data} /*!< ${4:Description} */
 	}${5: /* optional variable list */};
 # typedef struct
@@ -244,7 +245,8 @@ snippet tds
 	 *
 	 *  ${6:Detailed description}
 	 */
-	typedef struct ${2:_$1 }{
+	typedef struct ${2:_$1 }
+	{
 		m_${3:Data} /*!< ${4:Description} */
 	} ${1:`vim_snippets#Filename('$1_t', 'name')`};
 

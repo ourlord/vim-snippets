@@ -106,7 +106,8 @@ snippet cl
 	};
 # member function implementation
 snippet mfun
-	${4:void} ${1:`vim_snippets#Filename('$1', 'ClassName')`}::${2:memberFunction}(${3}) {
+	${4:void} ${1:`vim_snippets#Filename('$1', 'ClassName')`}::${2:memberFunction}(${3})
+	{
 		${0}
 	}
 # member function implementation without parameters
@@ -117,7 +118,8 @@ snippet dmfun0
 	 *
 	 * \return ${6:Return parameter description}
 	 */
-	${3:void} ${1:`vim_snippets#Filename('$1', 'ClassName')`}::${2:memberFunction}() {
+	${3:void} ${1:`vim_snippets#Filename('$1', 'ClassName')`}::${2:memberFunction}()
+	{
 		${0}
 	}
 # member function implementation with one parameter
@@ -129,7 +131,8 @@ snippet dmfun1
 	 * \param $4 ${8:Parameter description}
 	 * \return ${9:Return parameter description}
 	 */
-	${5:void} ${1:`vim_snippets#Filename('$1', 'ClassName')`}::${2:memberFunction}(${3:Type} ${4:Parameter}) {
+	${5:void} ${1:`vim_snippets#Filename('$1', 'ClassName')`}::${2:memberFunction}(${3:Type} ${4:Parameter})
+	{
 		${0}
 	}
 # member function implementation with two parameter
@@ -142,7 +145,8 @@ snippet dmfun2
 	 * \param $6 ${11:Parameter description}
 	 * \return ${12:Return parameter description}
 	 */
-	${7:void} ${1:`vim_snippets#Filename('$1', 'ClassName')`}::${2:memberFunction}(${3:Type} ${4:Parameter},${5:Type} ${6:Parameter}) {
+	${7:void} ${1:`vim_snippets#Filename('$1', 'ClassName')`}::${2:memberFunction}(${3:Type} ${4:Parameter},${5:Type} ${6:Parameter})
+	{
 		${0}
 	}
 # namespace
